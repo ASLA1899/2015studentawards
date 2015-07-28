@@ -291,8 +291,12 @@ color: #237061;
   font-style: italic;
 }
 
-.active, .selected img {
+.carousel-selector > .active, .selected img {
   border: solid 2px #003C30;
+}
+
+.carousel-selector {
+  cursor: pointer;
 }
 
 .HonorsHeader h4 {
