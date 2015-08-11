@@ -344,20 +344,24 @@
 
 <script type="text/javascript">
 $('#myCarousel').carousel({
-    interval: 13000
+    interval: 8000
 });
-
+var selectorIdx = 1;
+var numItems = 14;
 // handles the carousel thumbnails
 $('.carousel-selector').click(function () {
-    var selectorIdx = $(this).closest('li').index();
-    
-    $('#myCarousel')
-      .carousel(selectorIdx)
-      .find('.carousel-selector').removeClass('selected')
-      .eq(selectorIdx).addClass('selected')
-      .end()
-      .find('.item').removeClass('selected')
-      .eq(selectorIdx).addClass('active');
+    selectorIdx = $(this).closest('li').index();
+    $('#myCarousel').carousel(selectorIdx)
+});
+
+$('#myCarousel').on('slide.bs.carousel', function (e) {
+    selectorIdx = $(e.relatedTarget).index();
+    $(this)
+        .find('.carousel-selector').removeClass('selected')
+        .eq(selectorIdx).addClass('selected')
+        .end()
+        .find('.item').removeClass('selected')
+        .eq(selectorIdx).addClass('active');
 });
 
         

@@ -659,7 +659,22 @@ h2 {
 }
 
 .carousel-caption {
-  display: none !important;
+  left: 0;
+  width: 100%;
+  text-align: left;
+  padding: 10px 15px 10px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
+  display: none;
+}
+
+.carousel-inner:hover > .item > .carousel-caption {
+  display: block;
+  transition: 2s ease-in-out;
+  -webkit-transition: 2s ease-in-out;
+  -moz-transition: 2s ease-in-out;
+  -o-transition: 2s ease-in-out;
+  -ms-transition: 2s ease-in-out;
 }
 
 .carousel-indicators li {
@@ -1494,6 +1509,29 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 }
 
+/*Tablet and Larger Search Float and Position================================================================================*/
+
+@media (min-width:768px) and (max-width: 1340px) {
+
+.navbar-right {
+  float: left !important;
+  padding-left: 12px;
+}
+
+.navbar-form {
+  margin: 15px 10px 20px 10px;
+
+}
+}
+
+/*Mobile and Tablet Heading Float and Position================================================================================*/
+
+@media (min-width:768px) and (max-width: 794px) {
+
+h1 {
+  float: left !important;
+}
+}
 
 
  
