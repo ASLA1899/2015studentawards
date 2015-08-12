@@ -367,6 +367,7 @@ color: #237061;
 
 #ProjectSpecs p {
   margin-bottom: 10px;
+  margin-right: 25px;
 }
 
 #ProjectSpecs h3 {
@@ -834,11 +835,13 @@ color: #ffffff;
 #content-left {
   float: left;
   margin-left: 15px;
+  margin-right: 25px;
 }
 
 #content-right {
   float: left;
   margin-left: 15px;
+  margin-right: 25px;
 }
 
 #content-left h3  {
