@@ -19,11 +19,7 @@
     <!--Additional CustomCSS-->
     <link href="css/second.css" media="screen" rel="stylesheet" type="text/css" />
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <!--Bootstrap Core Script-->
-    <script src="js/jquery.min.js" type="text/javascript"></script>
-    <script src="js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="js/lazyload.js" type="text/javascript"></script>
-    <!--Bootstrap Core Script-->
+
     <!--Google Search-->
 
 <script type="text/javascript">
@@ -48,9 +44,9 @@
     <link href='assets/ico/favicon.png' rel='shortcut icon'>
     <!--End Mobile Icons-->
     <!--share-->
-    <script type="text/javascript">var switchTo5x=true;</script>
-    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-    <script type="text/javascript">stLight.options({publisher: "ce36057a-3074-4833-b04f-88b0cf8586c1", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+    <script async type="text/javascript">var switchTo5x=true;</script>
+    <script async type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script async type="text/javascript">stLight.options({publisher: "ce36057a-3074-4833-b04f-88b0cf8586c1", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
   <!--End Share-->
   </head>
   <body>
@@ -71,9 +67,9 @@
       <div class="collapse navbar-collapse" id="HeaderBar">
         <ul class="nav navbar-nav">
           <li class="on2"><a href="index.html">HOME</a></li>
-          <li><a href="http://www.asla.org/2014awards/rules_entries/index.html">CALL FOR ENTRIES</a></li>
+          <li><a href="http://asla.org/2015cfe/index.html">CALL FOR ENTRIES</a></li>
           <li><a href="http://www.asla.org/HonorsAwards.aspx">HONORS &#38; AWARDS</a></li>
-          <li><a href="http://www.asla.org/2014awards/rules_entries/index.html">AWARDS JURY</a></li>
+          <li><a href="http://asla.org/2015cfe/index.html">AWARDS JURY</a></li>
           <li><a href="http://asla.org/NewsReleaseDetails.aspx?id=44721">AWARDS PRESS RELEASE</a></li>
           <li><a href="http://www.asla.org/News.aspx">NEWS</a></li>
           <!--<li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expand="false">WATCH VIDEOS <span class="caret"></span></a>
@@ -108,7 +104,7 @@
     <h4>HONOR AWARD</h4><h4>STUDENT COLLABORATION</h4>
   </div>
     <div class="col-md-6" id="ProjectXtra">
-      <h4>Chicago, IL | Pongsakorn Suppakittpaisarn, Student ASLA; John Whalen, Student ASLA; Qiran Zhang, Student ASLA; Fernanda Maciel, Tianyu He; Mari Mensa; Sarah Grajdura | <em>Graduate</em> | Faculty Advisor: Tawab Himi | <a href="http://www.upenn.edu/">University of Pennsylvania</a></h4>
+      <h4>Chicago, IL | Pongsakorn Suppakittpaisarn, Student ASLA; John Whalen, Student ASLA; Qiran Zhang, Student ASLA; Fernanda Maciel, Tianyu He; Mari Mensa; Sarah Grajdura | <em>Graduate</em> | Faculty Advisor: Tawab Himi | <a href="http://illinois.edu/">University of Illinois at Urbana Champaign</a></h4>
     </div>
 </div>
 <!--Share-->
@@ -323,6 +319,26 @@
   </div>
 </div>
 
+<!--Bootstrap Core Script-->
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/lazyload.js" type="text/javascript"></script>
+    <script src="js/jquery.mobile.custom.min.js" type="text/javascript"></script>
+<!--/Bootstrap Core Script-->
+
+<!--Swipe Functionality-->
+<script type="text/javascript">  
+$(document).ready(function() {  
+   $("#myCarousel").swiperight(function() {  
+      $("#myCarousel").carousel('prev');  
+    });  
+   $("#myCarousel").swipeleft(function() {  
+      $("#myCarousel").carousel('next');  
+   });  
+});  
+</script> 
+
+<!--Thumbnails-->
 <script type="text/javascript">
 $('#myCarousel').carousel({
     interval: 8000
