@@ -638,6 +638,11 @@ h2 {
   font-weight: 300;
 }
 
+#share {
+  margin-left: 30px;
+  max-width: 100vw;
+  padding: 0px;
+}
 
 .carousel-control {
   font-size: 35px;
@@ -648,42 +653,56 @@ h2 {
 }
 
 .carousel-control.left {
-  background-image: none;
-  bottom: 25%;
-  left: -3px;
+  display: none;
 }
 
 .carousel-control.right {
-  background-image: none;
-  bottom: 25%;
-  right: -3px;
+  display: none;
 }
 
 .carousel-caption {
   left: 0;
   width: 100%;
   text-align: left;
-  padding: 10px 15px 10px 20px;
+  padding: 10px 15px 20px 20px;
   background-color: rgba(0, 0, 0, 0.7);
   position: relative;
-  display: none;
 }
 
-.carousel-inner:hover > .item > .carousel-caption {
+.carousel-inner > .item > .carousel-caption {
   display: block;
-  transition: 2s ease-in-out;
-  -webkit-transition: 2s ease-in-out;
-  -moz-transition: 2s ease-in-out;
-  -o-transition: 2s ease-in-out;
-  -ms-transition: 2s ease-in-out;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  z-index: 15;
+  width: 70%;
+  padding-left: 0;
+  margin-left: -35%;
+  text-align: center;
+  list-style: none;
 }
 
 .carousel-indicators li {
-  display: none;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #000 \9;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #003C30;
+  border-radius: 10px;
 }
 
 .carousel-indicators .active {
-  display: none;
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  background-color: #003C30;
 }
 
 .glyphicon-chevron-left {
@@ -877,10 +896,9 @@ color: #ffffff;
 }
 
 #ProjectHeader {
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-bottom: 5px;
-  margin-left: 30px;
+  margin-top: 10px;
+  padding-left: 15px;
+  margin-left: 25px;
 }
 
 #ProjectHeader h4 {
@@ -902,14 +920,13 @@ color: #ffffff;
 
 #ProjectStatement {
   padding-left: 15px;
-  padding-right: 20px;
+  padding-right: 25px;
   margin-top: 15px;
   margin-left: 25px;
 }
 
 #ProjectStatement p {
-  margin-right: 10px;
-  padding-right: 15px;
+  margin-right: 25px;
 }
 
 
@@ -923,6 +940,8 @@ color: #ffffff;
 #ProjectResources {
   margin-top: 15px;
   margin-left: 25px;
+  max-width: 100%;
+  padding-left: 15px;
 }
 
 
@@ -933,6 +952,16 @@ color: #ffffff;
   margin-right: auto;
   padding-top: 35px;
   margin-bottom: 25px;
+}
+
+#BigQuote {
+  display: inline-block;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 15px;
+  border-top: 1px solid #003C30;
+  border-bottom: 1px solid #003C30;
+
 }
 
 .form-control {
@@ -961,6 +990,18 @@ h6 {
   background-color: #003C30;
   margin-left: 15px;
   margin-top: 15px;
+}
+
+#aslafund {
+  width: 100%;
+}
+
+#lam {
+  width: 100%;
+}
+
+#victorstanley {
+  width: 100%;
 }
 
 #slider-thumbs {
