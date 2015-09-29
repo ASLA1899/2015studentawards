@@ -17,6 +17,14 @@ h1 {
   font-weight: 300;
 }
 
+h1 a {
+  color: #fff !important;
+}
+
+h1 a:hover, h1 a:focus {
+  color: #fff !important;
+}
+
 h2 {
   font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica", "Ariel", "sans-serif";
   -webkit-font-smoothing: antialiased;
@@ -304,7 +312,7 @@ color: #237061;
   color: #ffffff;
   background-color: #003C30;
   padding-left: 10px;
-  padding-top: 3px;
+  padding-top: 5px;
   width: 250px;
   height: 34px;
 }
@@ -694,7 +702,7 @@ h2 {
   cursor: pointer;
   background-color: #000 \9;
   background-color: rgba(0, 0, 0, 0);
-  border: 1px solid #003C30;
+  border: 1px solid #237061;
   border-radius: 10px;
 }
 
@@ -702,7 +710,7 @@ h2 {
   width: 12px;
   height: 12px;
   margin: 0;
-  background-color: #003C30;
+  background-color: #237061;
 }
 
 .glyphicon-chevron-left {
